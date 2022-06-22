@@ -2,6 +2,7 @@
 
 /* Accordion Button */
 .accordion {
+  align-items: center;
   width: 100%;
   border: 0;
   height: 50px;
@@ -9,17 +10,29 @@
   padding: 20px;
   background-color: antiquewhite;
   cursor: pointer;
+  display: flex;
 }
-.accordion:hover {
+.accordion:hover,
+.active {
   background-color: rgb(218, 194, 165);
 }
 .accordionTitle {
   font-size: 0.8rem;
   font-weight: bold;
 }
+.rotate {
+  transform: rotate(90deg);
+}
+.icon {
+  margin-left: auto;
+}
 
 /* Accordion Content */
 div.accordionText {
   padding: 20px;
   font-weight: 500;
+}
+div.accordionContent {
+  overflow: hidden;
+  transition: max-height 0.6s ease;
 }
